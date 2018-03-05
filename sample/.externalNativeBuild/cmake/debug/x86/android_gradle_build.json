@@ -2,11 +2,11 @@
 {
 	"buildFiles" : 
 	[
-		"/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/CMakeLists.txt"
+		"/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/sample/CMakeLists.txt"
 	],
 	"cleanCommands" : 
 	[
-		"/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/.externalNativeBuild/cmake/debug/x86 --target clean"
+		"/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/sample/.externalNativeBuild/cmake/debug/x86 --target clean"
 	],
 	"toolchains" : 
 	{

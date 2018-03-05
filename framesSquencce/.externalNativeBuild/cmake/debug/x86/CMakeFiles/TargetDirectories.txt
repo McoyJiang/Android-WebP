@@ -1,6 +1,6 @@
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-lib.dir
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-gif.dir
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-frame-sequence.dir
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
-/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-webp.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-lib.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-gif.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-frame-sequence.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-webp.dir

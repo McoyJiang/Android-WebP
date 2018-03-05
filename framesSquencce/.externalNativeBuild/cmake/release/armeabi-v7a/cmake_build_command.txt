@@ -1,10 +1,10 @@
 Executable : /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
--H/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce
--B/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/armeabi-v7a
+-H/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce
+-B/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_PLATFORM=android-15
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/build/intermediates/cmake/release/obj/armeabi-v7a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/build/intermediates/cmake/release/obj/armeabi-v7a
 -DCMAKE_BUILD_TYPE=Release
 -DANDROID_NDK=/Users/danny.jiang/Library/Android/sdk/ndk-bundle
 -DCMAKE_TOOLCHAIN_FILE=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake

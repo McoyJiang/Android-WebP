@@ -37,7 +37,7 @@ build CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__nat
   DEP_FILE = CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/native-lib.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/native-lib.cpp
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/src/main/cpp
 
@@ -64,7 +64,7 @@ build ../../../../build/intermediates/cmake/release/obj/x86/libnative-lib.so: CX
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86 && /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce -B/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86
+  COMMAND = cd /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86 && /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce -B/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -76,42 +76,42 @@ build CMakeFiles/native-gif.dir/src/main/cpp/gif/dgif_lib.c.o: C_COMPILER__nativ
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/dgif_lib.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/dgif_lib.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/dgif_lib.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 build CMakeFiles/native-gif.dir/src/main/cpp/gif/egif_lib.c.o: C_COMPILER__native-gif ../../../../src/main/cpp/gif/egif_lib.c
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/egif_lib.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/egif_lib.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/egif_lib.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 build CMakeFiles/native-gif.dir/src/main/cpp/gif/gifalloc.c.o: C_COMPILER__native-gif ../../../../src/main/cpp/gif/gifalloc.c
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/gifalloc.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gifalloc.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gifalloc.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 build CMakeFiles/native-gif.dir/src/main/cpp/gif/gif_err.c.o: C_COMPILER__native-gif ../../../../src/main/cpp/gif/gif_err.c
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/gif_err.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_err.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_err.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 build CMakeFiles/native-gif.dir/src/main/cpp/gif/gif_hash.c.o: C_COMPILER__native-gif ../../../../src/main/cpp/gif/gif_hash.c
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/gif_hash.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_hash.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_hash.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 build CMakeFiles/native-gif.dir/src/main/cpp/gif/quantize.c.o: C_COMPILER__native-gif ../../../../src/main/cpp/gif/quantize.c
   DEP_FILE = CMakeFiles/native-gif.dir/src/main/cpp/gif/quantize.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/quantize.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/quantize.c
   OBJECT_DIR = CMakeFiles/native-gif.dir
   OBJECT_FILE_DIR = CMakeFiles/native-gif.dir/src/main/cpp/gif
 
@@ -142,7 +142,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/BitmapDeco
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/BitmapDecoderJNI.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/BitmapDecoderJNI.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/BitmapDecoderJNI.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/FrameSequence.cpp || cmake_order_depends_target_native-frame-sequence
@@ -150,7 +150,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSeque
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequenceJNI.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/FrameSequenceJNI.cpp || cmake_order_depends_target_native-frame-sequence
@@ -158,7 +158,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSeque
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequenceJNI.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequenceJNI.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequenceJNI.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence_gif.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/FrameSequence_gif.cpp || cmake_order_depends_target_native-frame-sequence
@@ -166,7 +166,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSeque
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence_gif.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_gif.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_gif.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence_webp.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/FrameSequence_webp.cpp || cmake_order_depends_target_native-frame-sequence
@@ -174,7 +174,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSeque
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence_webp.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_webp.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_webp.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/JNIHelpers.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/JNIHelpers.cpp || cmake_order_depends_target_native-frame-sequence
@@ -182,7 +182,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/JNIHelpers
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/JNIHelpers.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/JNIHelpers.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/JNIHelpers.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Registry.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/Registry.cpp || cmake_order_depends_target_native-frame-sequence
@@ -190,7 +190,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Registry.c
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Registry.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Registry.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Registry.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Stream.cpp.o: CXX_COMPILER__native-frame-sequence ../../../../src/main/cpp/framesequence/Stream.cpp || cmake_order_depends_target_native-frame-sequence
@@ -198,7 +198,7 @@ build CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Stream.cpp
   DEP_FILE = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/Stream.cpp.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Stream.cpp
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Stream.cpp
   OBJECT_DIR = CMakeFiles/native-frame-sequence.dir
   OBJECT_FILE_DIR = CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence
 
@@ -225,7 +225,7 @@ build ../../../../build/intermediates/cmake/release/obj/x86/libnative-frame-sequ
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86 && /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86 && /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -236,273 +236,273 @@ build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/alpha.c.o: C_COMPILER__na
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/alpha.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/alpha.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/alpha.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/buffer.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/buffer.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/buffer.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/buffer.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/buffer.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/frame.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/frame.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/frame.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/frame.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/frame.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/idec.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/idec.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/idec.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/idec.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/idec.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/io.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/io.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/io.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/io.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/io.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/quant.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/quant.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/quant.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/quant.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/quant.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/tree.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/tree.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/tree.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/tree.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/tree.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/vp8.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/vp8.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/vp8.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/vp8l.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/vp8l.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/vp8l.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8l.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8l.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/webp.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dec/webp.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec/webp.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/webp.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/webp.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dec
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/demux/demux.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/demux/demux.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/demux/demux.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/demux/demux.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/demux/demux.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/demux
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/alpha_processing.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/alpha_processing.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/alpha_processing.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/alpha_processing_sse2.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/alpha_processing_sse2.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/alpha_processing_sse2.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing_sse2.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing_sse2.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/cpu-features.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/cpu-features.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/cpu-features.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu-features.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu-features.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/cpu.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/cpu.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/cpu.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/dec.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_clip_tables.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/dec_clip_tables.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_clip_tables.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_clip_tables.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_clip_tables.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_mips32.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/dec_mips32.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_mips32.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_mips32.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_mips32.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_neon.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/dec_neon.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_neon.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_neon.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_neon.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_sse2.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/dec_sse2.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/dec_sse2.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_sse2.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_sse2.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/lossless.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_mips32.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/lossless_mips32.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_mips32.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_mips32.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_mips32.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_neon.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/lossless_neon.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_neon.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_neon.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_neon.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_sse2.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/lossless_sse2.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/lossless_sse2.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_sse2.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_sse2.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/upsampling.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling_neon.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/upsampling_neon.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling_neon.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_neon.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_neon.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling_sse2.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/upsampling_sse2.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/upsampling_sse2.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_sse2.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_sse2.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/yuv.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv_mips32.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/yuv_mips32.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv_mips32.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_mips32.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_mips32.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv_sse2.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/dsp/yuv_sse2.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp/yuv_sse2.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_sse2.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_sse2.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/dsp
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/bit_reader.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/bit_reader.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/bit_reader.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/bit_reader.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/bit_reader.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/color_cache.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/color_cache.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/color_cache.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/color_cache.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/color_cache.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/filters.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/filters.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/filters.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/filters.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/filters.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/huffman.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/huffman.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/huffman.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/huffman.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/huffman.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/quant_levels_dec.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/quant_levels_dec.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/quant_levels_dec.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/quant_levels_dec.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/quant_levels_dec.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/random.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/random.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/random.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/random.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/random.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/rescaler.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/rescaler.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/rescaler.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/rescaler.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/rescaler.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/thread.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/thread.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/thread.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/thread.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/thread.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 build CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/utils.c.o: C_COMPILER__native-webp ../../../../src/main/cpp/webp/utils/utils.c
   DEP_FILE = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils/utils.c.o.d
   FLAGS = -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG
   INCLUDES = -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec
-  IN_ABS = /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/utils.c
+  IN_ABS = /Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/utils.c
   OBJECT_DIR = CMakeFiles/native-webp.dir
   OBJECT_FILE_DIR = CMakeFiles/native-webp.dir/src/main/cpp/webp/utils
 

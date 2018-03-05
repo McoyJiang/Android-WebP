@@ -99,7 +99,7 @@ rule C_STATIC_LIBRARY_LINKER__native-webp
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce -B/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86_64
+  command = /Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce -B/Users/danny.jiang/Downloads/work_dir/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/release/x86_64
   description = Re-running CMake...
   generator = 1
 
