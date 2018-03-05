@@ -27,5 +27,5 @@ repositories {
 compile (name: 'framesSquencce', ext: 'aar')
 ```
 
-5 in Java Activity, use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image
+5 in Java Activity, use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image<br>
 for details, please take references from `FrameSequenceTest.java` in sample
