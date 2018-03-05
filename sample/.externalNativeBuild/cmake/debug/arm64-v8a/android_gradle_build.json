@@ -1,0 +1,19 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+	],
+	"toolchains" : 
+	{
+		"6625623943515319907" : 
+		{
+			"cCompilerExecutable" : "/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

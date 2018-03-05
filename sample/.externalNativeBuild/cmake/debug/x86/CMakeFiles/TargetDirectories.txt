@@ -1,0 +1,2 @@
+/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/sample/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

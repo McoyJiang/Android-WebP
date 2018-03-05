@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FrameSequenceDemo</string>
+
+    <string name="start" translatable="false">start</string>
+    <string name="stop" translatable="false">stop</string>
+    <string name="vis" translatable="false">vis</string>
+    <string name="invis" translatable="false">invis</string>
+</resources>

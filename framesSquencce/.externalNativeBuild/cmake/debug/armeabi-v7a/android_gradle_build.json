@@ -1,0 +1,396 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-frame-sequence-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-frame-sequence",
+			"buildCommand" : "/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-frame-sequence",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/BitmapDecoderJNI.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequenceJNI.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_gif.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/FrameSequence_webp.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/JNIHelpers.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Registry.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_frame_sequence_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/framesequence/Stream.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-frame-sequence.so",
+			"toolchain" : "6625623943515319907"
+		},
+		"native-gif-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-gif",
+			"buildCommand" : "/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-gif",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/dgif_lib.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/egif_lib.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gifalloc.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_err.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/gif_hash.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/gif/quantize.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a/libnative-gif.a",
+			"toolchain" : "6625623943515319907"
+		},
+		"native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "6625623943515319907"
+		},
+		"native-webp-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-webp",
+			"buildCommand" : "/Users/danny.jiang/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-webp",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/alpha.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/buffer.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/frame.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/idec.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/io.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/quant.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/tree.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/vp8l.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dec/webp.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/demux/demux.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/alpha_processing_sse2.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu-features.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/cpu.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_clip_tables.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_mips32.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_neon.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/dec_sse2.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_mips32.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_neon.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/lossless_sse2.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_neon.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/upsampling_sse2.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_mips32.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/dsp/yuv_sse2.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/bit_reader.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/color_cache.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/filters.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/huffman.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/quant_levels_dec.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/random.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/rescaler.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/thread.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/gif -I../../../../src/main/cpp/webp/include -I../../../../src/main/cpp/webp/dec  -isystem /Users/danny.jiang/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info       -c ",
+					"src" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/src/main/cpp/webp/utils/utils.c",
+					"workingDirectory" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/danny.jiang/AndroidStudioProjects/FrameSequenceDemo/framesSquencce/.externalNativeBuild/cmake/debug/armeabi-v7a/libnative-webp.a",
+			"toolchain" : "6625623943515319907"
+		}
+	},
+	"toolchains" : 
+	{
+		"6625623943515319907" : 
+		{
+			"cCompilerExecutable" : "/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/danny.jiang/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
