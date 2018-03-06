@@ -15,6 +15,7 @@
  */
 
 #include "android/bitmap.h"
+#include <android/log.h>
 #include "JNIHelpers.h"
 #include "utils/log.h"
 #include "FrameSequence.h"
@@ -22,6 +23,8 @@
 #include "FrameSequenceJNI.h"
 
 #define JNI_PACKAGE "com/danny/framesSquencce"
+#define LOG_TAG "FRAME_SEQUENCE"
+#define LOGD(format, args...)  __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, format, ##args);
 
 static struct {
     jclass clazz;
@@ -74,8 +77,9 @@ static jobject nativeDecodeByteBuffer(JNIEnv* env, jobject clazz,
     return finalSequence;
 }
 
-static jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
+jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
         jobject istream, jbyteArray byteArray) {
+    LOGD("nativeDecodeStream:");
     JavaInputStream stream(env, istream, byteArray);
     FrameSequence* frameSequence = FrameSequence::create(&stream);
     return createJavaFrameSequence(env, frameSequence);
