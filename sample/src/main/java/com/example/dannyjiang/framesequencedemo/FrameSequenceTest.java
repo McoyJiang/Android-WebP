@@ -25,12 +25,12 @@ import android.widget.Toast;
 import com.danny.framesSquencce.FrameSequence;
 import com.danny.framesSquencce.FrameSequenceDrawable;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashSet;
 
 public class FrameSequenceTest extends Activity {
     FrameSequenceDrawable mDrawable;
-    int mResourceId;
     private ImageView imageView;
 
     // This provider is entirely unnecessary, just here to validate the acquire/release process
@@ -64,8 +64,6 @@ public class FrameSequenceTest extends Activity {
         setContentView(R.layout.basic_test_activity);
 
         imageView = (ImageView) findViewById(R.id.imageview);
-        change(R.raw.ben_neutral_talk_right);
-
 
         findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,20 +94,33 @@ public class FrameSequenceTest extends Activity {
     }
 
     public void change(int resId) {
+        if (mDrawable != null && mDrawable.isRunning()) {
+            mDrawable.stop();
+            mDrawable = null;
+        }
+
         InputStream is = getResources().openRawResource(resId);
 
-        FrameSequence fs = FrameSequence.decodeStream(is);
-        mDrawable = new FrameSequenceDrawable(fs, mProvider);
-        mDrawable.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
-            @Override
-            public void onFinished(FrameSequenceDrawable drawable) {
-                Toast.makeText(getApplicationContext(),
-                        "The animation has finished", Toast.LENGTH_SHORT).show();
-            }
-        });
-        imageView.setImageDrawable(mDrawable);
+        try {
+            FrameSequence fs = FrameSequence.decodeStream(is);
+            mDrawable = new FrameSequenceDrawable(fs, mProvider);
+            mDrawable.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+                @Override
+                public void onFinished(FrameSequenceDrawable drawable) {
+                    Toast.makeText(getApplicationContext(),
+                            "The animation has finished", Toast.LENGTH_SHORT).show();
+                }
+            });
+            imageView.setImageDrawable(mDrawable);
 
-        mDrawable.start();
+            mDrawable.start();
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+
+            }
+        }
     }
 
     @Override
@@ -124,5 +135,9 @@ public class FrameSequenceTest extends Activity {
 //        mDrawable = null;
 //        imageView.setImageDrawable(null);
 
+    }
+
+    public void loadAnimation(View view) {
+        change(R.raw.ben_neutral_talk_right);
     }
 }
