@@ -1,5 +1,5 @@
-framesSquencce/.externalNativeBuild
-sample/.externalNativeBuild
+framesSquencce/.externalNativeBuild/
+sample/.externalNativeBuild/
 .gradle/
 .idea/
 build/
