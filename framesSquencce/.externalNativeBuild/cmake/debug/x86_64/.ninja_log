@@ -117,3 +117,8 @@
 1230	1305	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-frame-sequence.so	d55158e8f1fa6fb6
 3	94	0	CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequenceJNI.cpp.o	99cf28d0f8ecc581
 94	170	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-frame-sequence.so	d55158e8f1fa6fb6
+1	77	0	CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequenceJNI.cpp.o	99cf28d0f8ecc581
+1	95	0	CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequence_webp.cpp.o	29b9206860bf5b30
+95	212	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-frame-sequence.so	d55158e8f1fa6fb6
+2	77	0	CMakeFiles/native-frame-sequence.dir/src/main/cpp/framesequence/FrameSequenceJNI.cpp.o	99cf28d0f8ecc581
+77	153	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-frame-sequence.so	d55158e8f1fa6fb6

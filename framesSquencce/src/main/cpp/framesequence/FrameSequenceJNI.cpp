@@ -90,7 +90,7 @@ static void nativeDestroyFrameSequence(JNIEnv* env, jobject clazz,
     FrameSequence* frameSequence = reinterpret_cast<FrameSequence*>(frameSequenceLong);
     jobject buf = frameSequence->getRawByteBuffer();
     if (buf != NULL) {
-        env->DeleteGlobalRef(buf);
+        //env->DeleteGlobalRef(buf);
     }
     delete frameSequence;
 }

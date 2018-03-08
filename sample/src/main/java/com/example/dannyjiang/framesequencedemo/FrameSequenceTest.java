@@ -18,6 +18,7 @@ package com.example.dannyjiang.framesequencedemo;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -30,11 +31,15 @@ import java.io.InputStream;
 import java.util.HashSet;
 
 public class FrameSequenceTest extends Activity {
-    FrameSequenceDrawable mDrawable;
+    private static final String TAG = "FrameSequenceTest";
+
+    FrameSequenceDrawable mDrawable1;
+    FrameSequenceDrawable mDrawable2;
+    FrameSequenceDrawable mDrawable3;
     private ImageView imageView;
 
     // This provider is entirely unnecessary, just here to validate the acquire/release process
-    private class CheckingProvider implements FrameSequenceDrawable.BitmapProvider {
+    public static class CheckingProvider implements FrameSequenceDrawable.BitmapProvider {
         HashSet<Bitmap> mBitmaps = new HashSet<Bitmap>();
         @Override
         public Bitmap acquireBitmap(int minWidth, int minHeight) {
@@ -65,35 +70,99 @@ public class FrameSequenceTest extends Activity {
 
         imageView = (ImageView) findViewById(R.id.imageview);
 
-        findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mDrawable.start();
-            }
-        });
-        findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mDrawable.stop();
-            }
-        });
+        initDrawable();
+
+//        findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mDrawable.start();
+//            }
+//        });
+//        findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mDrawable.stop();
+//            }
+//        });
         findViewById(R.id.vis).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //                mDrawable.setVisible(true, true);
-                change(R.raw.ben_happy_talk_right);
+                change(2);
             }
         });
         findViewById(R.id.invis).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //                mDrawable.setVisible(false, true);
-                change(R.raw.ben_sad_blink_right);
+                change(3);
             }
         });
     }
 
-    public void change(int resId) {
+    private void initDrawable() {
+        try {
+            InputStream is1 = getResources().openRawResource(R.raw.ben_neutral_talk_right);
+
+            FrameSequence fs1 = FrameSequence.decodeStream(is1);
+
+            mDrawable1 = new FrameSequenceDrawable(fs1, mProvider);
+            mDrawable1.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+                @Override
+                public void onFinished(FrameSequenceDrawable drawable) {
+                    Toast.makeText(getApplicationContext(),
+                            "The animation has finished", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            InputStream is2 = getResources().openRawResource(R.raw.ben_sad_blink_right);
+            FrameSequence fs2 = FrameSequence.decodeStream(is2);
+
+            mDrawable2 = new FrameSequenceDrawable(fs2, mProvider);
+            mDrawable2.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+                @Override
+                public void onFinished(FrameSequenceDrawable drawable) {
+                    Toast.makeText(getApplicationContext(),
+                            "The animation has finished", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            InputStream is3 = getResources().openRawResource(R.raw.ben_happy_talk_right);
+            FrameSequence fs3 = FrameSequence.decodeStream(is3);
+
+            mDrawable3 = new FrameSequenceDrawable(fs3, mProvider);
+            mDrawable3.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+                @Override
+                public void onFinished(FrameSequenceDrawable drawable) {
+                    Toast.makeText(getApplicationContext(),
+                            "The animation has finished", Toast.LENGTH_SHORT).show();
+                }
+            });
+        } catch (Exception e) {
+            Log.e(TAG, "e is " + e.getMessage());
+        } finally {
+        }
+    }
+
+    public void change(int sequence) {
+        switch (sequence) {
+            case 1:
+                imageView.setImageDrawable(mDrawable1);
+
+                mDrawable1.start();
+                break;
+            case 2:
+                imageView.setImageDrawable(mDrawable2);
+                mDrawable2.start();
+                break;
+            case 3:
+                imageView.setImageDrawable(mDrawable3);
+                mDrawable3.start();
+                break;
+        }
+
+
+        /**
         if (mDrawable != null && mDrawable.isRunning()) {
             mDrawable.stop();
             mDrawable = null;
@@ -101,8 +170,10 @@ public class FrameSequenceTest extends Activity {
 
         InputStream is = getResources().openRawResource(resId);
 
+        FrameSequence frameSequence = new FrameSequence();
+
         try {
-            FrameSequence fs = FrameSequence.decodeStream(is);
+            FrameSequence fs = frameSequence.decodeStream(is);
             mDrawable = new FrameSequenceDrawable(fs, mProvider);
             mDrawable.setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
                 @Override
@@ -117,10 +188,12 @@ public class FrameSequenceTest extends Activity {
         } finally {
             try {
                 is.close();
+                is = null;
+                frameSequence.destroy();
             } catch (IOException e) {
 
             }
-        }
+        }*/
     }
 
     @Override
@@ -138,6 +211,6 @@ public class FrameSequenceTest extends Activity {
     }
 
     public void loadAnimation(View view) {
-        change(R.raw.ben_neutral_talk_right);
+        change(1);
     }
 }

@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".MainActivity">
+
+        </activity>
+
         <activity
             android:name=".SamplesList"
             android:label="@string/app_name" />

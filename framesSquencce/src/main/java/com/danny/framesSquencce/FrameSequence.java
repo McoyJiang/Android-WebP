@@ -23,16 +23,22 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 
 public class FrameSequence {
+    private static final String TAG = "FrameSequence";
+
     static {
         System.loadLibrary("native-frame-sequence");
     }
 
-    private final long mNativeFrameSequence;
-    private final int mWidth;
-    private final int mHeight;
-    private final boolean mOpaque;
-    private final int mFrameCount;
-    private final int mDefaultLoopCount;
+    private long mNativeFrameSequence;
+    private int mWidth;
+    private int mHeight;
+    private boolean mOpaque;
+    private int mFrameCount;
+    private int mDefaultLoopCount;
+
+    public FrameSequence() {
+
+    }
 
     public int getWidth() { return mWidth; }
     public int getHeight() { return mHeight; }
@@ -43,21 +49,22 @@ public class FrameSequence {
     private static native FrameSequence nativeDecodeByteArray(byte[] data, int offset, int length);
     private static native FrameSequence nativeDecodeStream(InputStream is, byte[] tempStorage);
     private static native FrameSequence nativeDecodeByteBuffer(ByteBuffer buffer, int offset, int capacity);
-    private static native void nativeDestroyFrameSequence(long nativeFrameSequence);
+    public static native void nativeDestroyFrameSequence(long nativeFrameSequence);
     private static native long nativeCreateState(long nativeFrameSequence);
     private static native void nativeDestroyState(long nativeState);
     private static native long nativeGetFrame(long nativeState, int frameNr,
                                               Bitmap output, int previousFrameNr);
 
     @SuppressWarnings("unused") // called by native
-    private FrameSequence(long nativeFrameSequence, int width, int height,
-                          boolean opaque, int frameCount, int defaultLoopCount) {
+    public FrameSequence(long nativeFrameSequence, int width, int height,
+                         boolean opaque, int frameCount, int defaultLoopCount) {
         mNativeFrameSequence = nativeFrameSequence;
         mWidth = width;
         mHeight = height;
         mOpaque = opaque;
         mFrameCount = frameCount;
         mDefaultLoopCount = defaultLoopCount;
+        Log.e(TAG, "defaultLoopCount is " + defaultLoopCount);
     }
 
     public static FrameSequence decodeByteArray(byte[] data) {
@@ -103,11 +110,18 @@ public class FrameSequence {
         return new State(nativeState);
     }
 
+    public void destroy() {
+        try {
+            if (mNativeFrameSequence != 0) nativeDestroyFrameSequence(mNativeFrameSequence);
+        } finally {
+        }
+    }
+
     @Override
     protected void finalize() throws Throwable {
         Log.e("FRAME_SEQUENCE", "finalize");
         try {
-            //if (mNativeFrameSequence != 0) nativeDestroyFrameSequence(mNativeFrameSequence);
+            if (mNativeFrameSequence != 0) nativeDestroyFrameSequence(mNativeFrameSequence);
         } finally {
             super.finalize();
         }

@@ -6,16 +6,10 @@
     android:background="#ffffffff"
     android:orientation="vertical">
 
-    <Button
-        android:text="loadAnimatedWebP"
-        android:onClick="loadAnimation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <ImageView
         android:id="@+id/imageview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:background="@color/colorAccent"/>
 
     <LinearLayout
@@ -24,16 +18,10 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/start"
+            android:text="loadAnimatedWebP"
+            android:onClick="loadAnimation"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/start" />
-
-        <Button
-            android:id="@+id/stop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stop" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/vis"
