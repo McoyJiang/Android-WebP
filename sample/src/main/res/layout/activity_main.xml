@@ -32,6 +32,10 @@
         webpImg:defaultRawId="@raw/ben_neutral_talk_right"
         webpImg:neutralRawId="@raw/ben_sad_blink_right"
         webpImg:finalRawId="@raw/ben_happy_talk_right"
+
+        webpImg:defaultCount="2"
+        webpImg:neutralCount="1"
+        webpImg:finalCount="3"
         />
 
 </LinearLayout>

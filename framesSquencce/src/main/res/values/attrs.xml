@@ -4,5 +4,9 @@
         <attr name="defaultRawId" format="reference"></attr>
         <attr name="neutralRawId" format="reference"></attr>
         <attr name="finalRawId" format="reference"></attr>
+
+        <attr name="defaultCount" format="integer" />
+        <attr name="neutralCount" format="integer" />
+        <attr name="finalCount" format="integer" />
     </declare-styleable>
 </resources>

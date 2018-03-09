@@ -59,6 +59,10 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         }
     }
 
+    public void setAnimationCount(int animationCount) {
+        mFrameSequence.setDefaultLoopCount(animationCount);
+    }
+
     public static interface OnFinishedListener {
         /**
          * Called when a FrameSequenceDrawable has finished looping.

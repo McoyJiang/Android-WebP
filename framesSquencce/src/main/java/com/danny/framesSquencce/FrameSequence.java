@@ -49,6 +49,10 @@ public class FrameSequence {
     public int getFrameCount() { return mFrameCount; }
     public int getDefaultLoopCount() { return mDefaultLoopCount; }
 
+    public void setDefaultLoopCount(int count) {
+        mDefaultLoopCount = count;
+    }
+
     private static native FrameSequence nativeDecodeByteArray(byte[] data, int offset, int length);
     private static native FrameSequence nativeDecodeStream(InputStream is, byte[] tempStorage);
     private static native FrameSequence nativeDecodeByteBuffer(ByteBuffer buffer, int offset, int capacity);
