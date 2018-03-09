@@ -2,7 +2,7 @@
 This library is used to display animated WebP image file. 
 It uses 3 native libraries to implement the function: libwebp, libgif, framesequence.
 
-# While this lib ?
+# Why this lib ?
 For now only Facebook's `Fresco` which can be used to display WebP image file.<br>
 But `Fresco` has some defect, such as it takes too much space in project, besides,<br>
 when you are going to use different animated WebP image file on a SimpleDraweeView<br>
@@ -38,5 +38,96 @@ compile (name: 'framesSquencce', ext: 'aar')
 ```
 
 # how to use
-5 in Java Activity, use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image<br>
+in Java , use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image<br>
 #### for details, please take references from `FrameSequenceTest.java` in sample
+
+# It is even easier in Android
+there is a customized widget `WebpImageView`. Use this widget you can simply dispay animated WebP image by the following code:
+
+### in xml layout
+```
+<com.danny.framesSquencce.WebpImageView
+        android:id="@+id/webpImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent"
+        webpImg:defaultRawId="@raw/ben_neutral_talk_right"
+        webpImg:neutralRawId="@raw/ben_sad_blink_right"
+        webpImg:finalRawId="@raw/ben_happy_talk_right"
+
+        webpImg:defaultCount="2"
+        webpImg:neutralCount="1"
+        webpImg:finalCount="3"
+        />
+```
+there are 3 raw resources you can set to a WebpImageView, they are respectively for default & neutral & final animation status.<br>
+besides, you can set animation count by setting `defaultCount` & `neutralCount` & `finalCount`
+
+### in Activity
+you can set animation finish Listener
+```
+package com.example.dannyjiang.framesequencedemo;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+import com.danny.framesSquencce.WebpImageView;
+
+import static com.danny.framesSquencce.WebpImageView.STATUS_DEFAULT;
+import static com.danny.framesSquencce.WebpImageView.STATUS_FINAL;
+import static com.danny.framesSquencce.WebpImageView.STATUS_NEUTRAL;
+
+public class MainActivity extends AppCompatActivity {
+
+    WebpImageView webpImageView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        webpImageView = ((WebpImageView) findViewById(R.id.webpImage));
+
+        // add finish callback
+        webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
+
+            @Override
+            public void onAnimationFinished(int status) {
+                switch (status) {
+                    case STATUS_DEFAULT:
+                        Toast.makeText(MainActivity.this, "default webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_NEUTRAL:
+                        Toast.makeText(MainActivity.this, "neutral webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_FINAL:
+                        Toast.makeText(MainActivity.this, "final webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
+
+        // set animation count for DEFAULT & NEUTRAL & FINAL animation
+        webpImageView.setDefaultAnimationCount(1);
+        webpImageView.setNeutralAnimationCount(2);
+        webpImageView.setFinalAnimationCount(1);
+    }
+
+    public void defaultAnim(View view) {
+        webpImageView.playAnimation(STATUS_DEFAULT);
+    }
+
+    public void neutralAnim(View view) {
+        webpImageView.playAnimation(WebpImageView.STATUS_NEUTRAL);
+    }
+
+    public void finalAnim(View view) {
+        webpImageView.playAnimation(WebpImageView.STATUS_FINAL);
+    }
+}
+```
