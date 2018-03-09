@@ -2,6 +2,13 @@
 This library is used to display animated WebP image file. 
 It uses 3 native libraries to implement the function: libwebp, libgif, framesequence.
 
+# While this lib ?
+For now only Facebook's `Fresco` which can be used to display WebP image file.<br>
+But `Fresco` has some defect, such as it takes too much space in project, besides,<br>
+when you are going to use different animated WebP image file on a SimpleDraweeView<br>
+there will be a blank gap between different Controller, like the following discussion:<br>
+[SimpleDraweeView black filckering on replacement image](https://github.com/facebook/fresco/issues/1468)
+
 ## How to use
 
 You can use this library in two ways:
