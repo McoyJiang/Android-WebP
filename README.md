@@ -7,11 +7,14 @@ For now only Facebook's `Fresco` which can be used to display WebP image file.<b
 But `Fresco` has some defect, such as it takes too much space in project, besides,<br>
 when you are going to use different animated WebP image file on a SimpleDraweeView<br>
 there will be a blank gap between different Controller, like the following discussion:<br>
-[SimpleDraweeView black filckering on replacement image](https://github.com/facebook/fresco/issues/1468)
+[SimpleDraweeView black filckering on replacement image](https://github.com/facebook/fresco/issues/1468)<br>
+[Smooth transition when changing image on SimpleDraweeView](https://github.com/facebook/fresco/issues/1167)<br>
+[How to make it not flash when constantly switching Load picture?](https://github.com/facebook/fresco/issues/833)<br>
 
-## How to use
 
-You can use this library in two ways:
+# How to import this library
+You can import this library into your porject by two ways:
+
 ### 1 download all the source code of framesequence library, then import it into your own project as a library module
 for this approach is very simple, no need to make any introductions
 
@@ -34,5 +37,6 @@ repositories {
 compile (name: 'framesSquencce', ext: 'aar')
 ```
 
+# how to use
 5 in Java Activity, use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image<br>
 #### for details, please take references from `FrameSequenceTest.java` in sample
