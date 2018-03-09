@@ -15,10 +15,10 @@ there will be a blank gap between different Controller, like the following discu
 # How to import this library
 You can import this library into your porject by two ways:
 
-### 1 download all the source code of framesequence library, then import it into your own project as a library module
+### 1 | download all the source code of framesequence library, then import it into your own project as a library module
 for this approach is very simple, no need to make any introductions
 
-### 2 just use aar dependency
+### 2 | just use aar dependency
 1. download the framesSquencce-debug.aar file in this project.
 
 2. copy this file into your project's libs directory
