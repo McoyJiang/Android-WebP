@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         webpImageView = ((WebpImageView) findViewById(R.id.webpImage));
 
+        // add finish callback
         webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
 
             @Override
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        // set animation count for DEFAULT & NEUTRAL & FINAL animation
+        webpImageView.setDefaultAnimationCount(1);
+        webpImageView.setNeutralAnimationCount(2);
+        webpImageView.setFinalAnimationCount(1);
     }
 
     public void defaultAnim(View view) {
