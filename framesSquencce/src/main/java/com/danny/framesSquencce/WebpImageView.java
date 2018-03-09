@@ -50,6 +50,20 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         }
     }
 
+    private OnWebpFinishListener listener;
+
+    /**
+     * Listener which used to get if WebP animation has been finished
+     */
+    public interface OnWebpFinishListener {
+        /**
+         * a callback to call, pass which WebpIamgeView has been finished animation
+         *
+         * @param status    STATUS_DEFAULT or STATUS_NEUTRAL or STATUS_FINAL
+         */
+        void onAnimationFinished(int status);
+    }
+
     public WebpImageView(Context context) {
         super(context);
     }
@@ -64,10 +78,36 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         // load raw resources into streams, and get FrameSequenceDrawable, store them in array
         mDrawables[0] = initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_defaultRawId, -1));
+        mDrawables[0].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_DEFAULT);
+                }
+            }
+        });
         mDrawables[1] = initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_neutralRawId, -1));
+        mDrawables[1].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_NEUTRAL);
+                }
+            }
+        });
         mDrawables[2] = initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_finalRawId, -1));
+        mDrawables[2].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_FINAL);
+                }
+            }
+        });
+
+        mTypedArray.recycle();
 
         // default drawable must not be NULL !
         setImageDrawable(mDrawables[0]);
@@ -122,5 +162,9 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
                 mDrawables[2].start();
                 break;
         }
+    }
+
+    public void setFinishedListener(OnWebpFinishListener listener) {
+        this.listener = listener;
     }
 }
