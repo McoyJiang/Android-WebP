@@ -17,10 +17,13 @@
 package com.danny.framesSquencce;
 
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import java.io.InputStream;
 import java.nio.ByteBuffer;
+
+/**
+ * @author danny.jiang
+ */
 
 public class FrameSequence {
     private static final String TAG = "FrameSequence";
@@ -64,7 +67,6 @@ public class FrameSequence {
         mOpaque = opaque;
         mFrameCount = frameCount;
         mDefaultLoopCount = defaultLoopCount;
-        Log.e(TAG, "defaultLoopCount is " + defaultLoopCount);
     }
 
     public static FrameSequence decodeByteArray(byte[] data) {
@@ -119,7 +121,6 @@ public class FrameSequence {
 
     @Override
     protected void finalize() throws Throwable {
-        Log.e("FRAME_SEQUENCE", "finalize");
         try {
             if (mNativeFrameSequence != 0) nativeDestroyFrameSequence(mNativeFrameSequence);
         } finally {

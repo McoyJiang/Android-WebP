@@ -389,7 +389,5 @@ static RegistryEntry gEntry = {
         NULL,
         acceptsWebPBuffer,
 };
-static Registry gRegister(gEntry){
-
-}
+static Registry gRegister(gEntry);
 

@@ -31,6 +31,10 @@ import android.os.HandlerThread;
 import android.os.Process;
 import android.os.SystemClock;
 
+/**
+ * @author danny.jiang
+ */
+
 public class FrameSequenceDrawable extends Drawable implements Animatable, Runnable {
     /**
      * These constants are chosen to imitate common browser behavior for WebP/GIF.

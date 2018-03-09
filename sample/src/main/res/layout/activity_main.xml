@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:webpImg="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <Button
-        android:text="load"
-        android:onClick="loadVic"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:text="stop"
-        android:onClick="stop"
+        android:text="default"
+        android:onClick="defaultAnim"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/imageVic"
-        android:layout_width="wrap_content"
+    <Button
+        android:text="neutral"
+        android:onClick="neutralAnim"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:text="final"
+        android:onClick="finalAnim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.danny.framesSquencce.WebpImageView
+        android:id="@+id/webpImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent"
+        webpImg:defaultRawId="@raw/ben_neutral_talk_right"
+        webpImg:neutralRawId="@raw/ben_sad_blink_right"
+        webpImg:finalRawId="@raw/ben_happy_talk_right"
+        />
 
 </LinearLayout>

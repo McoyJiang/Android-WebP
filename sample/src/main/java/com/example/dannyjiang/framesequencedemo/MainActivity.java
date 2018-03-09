@@ -3,40 +3,29 @@ package com.example.dannyjiang.framesequencedemo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.danny.framesSquencce.FrameSequence;
-import com.danny.framesSquencce.FrameSequenceDrawable;
-
-import java.io.InputStream;
+import com.danny.framesSquencce.WebpImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    FrameSequenceDrawable mDrawable;
-
-    final FrameSequenceTest.CheckingProvider mProvider = new FrameSequenceTest.CheckingProvider();
-    private ImageView imageVic;
+    WebpImageView webpImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageVic = ((ImageView) findViewById(R.id.imageVic));
-
-        InputStream is = getResources().openRawResource(R.raw.vic_roll);
-        FrameSequence fs = FrameSequence.decodeStream(is);
-
-        mDrawable = new FrameSequenceDrawable(fs, mProvider);
-        imageVic.setImageDrawable(mDrawable);
+        webpImageView = ((WebpImageView) findViewById(R.id.webpImage));
     }
 
-    public void loadVic(View view) {
-        mDrawable.start();
+    public void defaultAnim(View view) {
+        webpImageView.playAnimation(WebpImageView.STATUS_DEFAULT);
     }
 
-    public void stop(View view) {
-        mDrawable.stop();
+    public void neutralAnim(View view) {
+        webpImageView.playAnimation(WebpImageView.STATUS_NEUTRAL);
+    }
+
+    public void finalAnim(View view) {
+        webpImageView.playAnimation(WebpImageView.STATUS_FINAL);
     }
 }

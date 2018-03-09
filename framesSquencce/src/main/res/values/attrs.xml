@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="webImg">
+        <attr name="defaultRawId" format="reference"></attr>
+        <attr name="neutralRawId" format="reference"></attr>
+        <attr name="finalRawId" format="reference"></attr>
+    </declare-styleable>
+</resources>
