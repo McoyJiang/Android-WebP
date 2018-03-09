@@ -37,11 +37,7 @@ repositories {
 compile (name: 'framesSquencce', ext: 'aar')
 ```
 
-# how to use
-in Java , use widget `FrameSequence` and `FrameSequenceDrawable` to show webp image<br>
-#### for details, please take references from `FrameSequenceTest.java` in sample
-
-# It is even easier in Android
+# how to use in Android
 there is a customized widget `WebpImageView`. Use this widget you can simply dispay animated WebP image by the following code:
 
 ### in xml layout
@@ -66,19 +62,6 @@ besides, you can set animation count by setting `defaultCount` & `neutralCount` 
 ### in Activity
 you can set animation finish Listener
 ```
-package com.example.dannyjiang.framesequencedemo;
-
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
-
-import com.danny.framesSquencce.WebpImageView;
-
-import static com.danny.framesSquencce.WebpImageView.STATUS_DEFAULT;
-import static com.danny.framesSquencce.WebpImageView.STATUS_FINAL;
-import static com.danny.framesSquencce.WebpImageView.STATUS_NEUTRAL;
-
 public class MainActivity extends AppCompatActivity {
 
     WebpImageView webpImageView;
@@ -131,3 +114,5 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+
+## for more details, please take references from `FrameSequenceTest.java` in sample
