@@ -3,3 +3,4 @@ sample/.externalNativeBuild/
 .gradle/
 .idea/
 build/
+*.DS_Store

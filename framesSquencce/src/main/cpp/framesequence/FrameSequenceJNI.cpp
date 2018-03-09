@@ -79,7 +79,6 @@ static jobject nativeDecodeByteBuffer(JNIEnv* env, jobject clazz,
 
 jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
         jobject istream, jbyteArray byteArray) {
-    LOGD("nativeDecodeStream:");
     JavaInputStream stream(env, istream, byteArray);
     FrameSequence* frameSequence = FrameSequence::create(&stream);
     return createJavaFrameSequence(env, frameSequence);

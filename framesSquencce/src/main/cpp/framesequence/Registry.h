@@ -37,7 +37,7 @@ struct RegistryEntry {
  * DataStream pointer.
  *
  * The super class / root constructable type only needs to define a single static construction
- * meathod that creates an instance by iterating through all factory methods.
+ * method that creates an instance by iterating through all factory methods.
  */
 class Registry {
 public:
