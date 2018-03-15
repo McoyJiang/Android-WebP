@@ -61,7 +61,7 @@ besides, you can set animation count by setting `defaultCount` & `neutralCount` 
 
 **Notece: you should set name space for webpImg attribute. add this into you xml file**
 ```
-xmlns:webpImg="com.danny.framesSquencce"
+xmlns:webpImg="http://schemas.android.com/apk/res-auto"
 ```
 
 ### in Activity
