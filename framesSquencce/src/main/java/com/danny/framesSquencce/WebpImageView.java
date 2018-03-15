@@ -174,6 +174,18 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         mDrawables[2].setAnimationCount(finalAnimationCount);
     }
 
+    public void setDefaultDrawable(int resId) {
+        mDrawables[STATUS_DEFAULT] = initWebpDrawable(resId, 1);
+    }
+
+    public void setNeutralDrawable(int resId) {
+        mDrawables[STATUS_NEUTRAL] = initWebpDrawable(resId, 1);
+    }
+
+    public void setFinalDrawable(int resId) {
+        mDrawables[STATUS_FINAL] = initWebpDrawable(resId, 1);
+    }
+
     // only play default animation
     public void playAnimation() {
         playAnimation(STATUS_DEFAULT);

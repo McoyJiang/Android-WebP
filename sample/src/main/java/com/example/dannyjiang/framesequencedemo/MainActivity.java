@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        webpImageView.setDefaultDrawable(R.raw.ben_neutral_talk_right);
+        webpImageView.setNeutralDrawable(R.raw.ben_sad_blink_right);
+        webpImageView.setFinalDrawable(R.raw.vic_roll);
+
         // set animation count for DEFAULT & NEUTRAL & FINAL animation
         webpImageView.setDefaultAnimationCount(1);
         webpImageView.setNeutralAnimationCount(2);
