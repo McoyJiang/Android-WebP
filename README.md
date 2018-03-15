@@ -59,6 +59,11 @@ there is a customized widget `WebpImageView`. Use this widget you can simply dis
 there are 3 raw resources you can set to a WebpImageView, they are respectively for default & neutral & final animation status.<br>
 besides, you can set animation count by setting `defaultCount` & `neutralCount` & `finalCount`
 
+**Notece: you should set name space for webpImg attribute. add this into you xml file**
+```
+xmlns:webpImg="com.danny.framesSquencce"
+```
+
 ### in Activity
 you can set animation finish Listener
 ```
