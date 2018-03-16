@@ -29,7 +29,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:background="@color/colorAccent"
-        webpImg:defaultRawId="@raw/ben_neutral_talk_right"
+        webpImg:defaultRawId="@raw/roddy_sad_blink_right"
 
         webpImg:defaultCount="2"
         webpImg:neutralCount="1"

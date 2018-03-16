@@ -176,14 +176,38 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
     public void setDefaultDrawable(int resId) {
         mDrawables[STATUS_DEFAULT] = initWebpDrawable(resId, 1);
+        mDrawables[STATUS_DEFAULT].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_DEFAULT);
+                }
+            }
+        });
     }
 
     public void setNeutralDrawable(int resId) {
         mDrawables[STATUS_NEUTRAL] = initWebpDrawable(resId, 1);
+        mDrawables[STATUS_NEUTRAL].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_NEUTRAL);
+                }
+            }
+        });
     }
 
     public void setFinalDrawable(int resId) {
         mDrawables[STATUS_FINAL] = initWebpDrawable(resId, 1);
+        mDrawables[STATUS_FINAL].setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_FINAL);
+                }
+            }
+        });
     }
 
     // only play default animation
