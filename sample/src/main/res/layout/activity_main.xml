@@ -30,6 +30,8 @@
         android:layout_height="300dp"
         android:background="@color/colorAccent"
         webpImg:defaultRawId="@raw/roddy_sad_blink_right"
+        webpImg:neutralRawId="@raw/roddy_neutral_talk_right"
+        webpImg:finalRawId="@raw/roddy_happy_talk_right"
 
         webpImg:defaultCount="2"
         webpImg:neutralCount="1"
