@@ -19,7 +19,7 @@ You can import this library into your porject by two ways:
 for this approach is very simple, no need to make any introductions
 
 ### 2 | just use aar dependency
-1. download the framesSquencce-debug.aar file in this project.
+1. download the webp.aar file in this project.
 
 2. copy this file into your project's libs directory
 
@@ -34,7 +34,7 @@ repositories {
 
 4. add dependency in build.gradle
 ```
-compile (name: 'framesSquencce', ext: 'aar')
+compile (name: 'webp', ext: 'aar')
 ```
 
 # how to use in Android
