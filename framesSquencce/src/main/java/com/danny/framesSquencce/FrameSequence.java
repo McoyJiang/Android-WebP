@@ -17,6 +17,7 @@
 package com.danny.framesSquencce;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 
 import java.io.InputStream;
 import java.nio.ByteBuffer;
@@ -125,6 +126,7 @@ public class FrameSequence {
 
     @Override
     protected void finalize() throws Throwable {
+        Log.d(TAG, "finalize: mNativeFrameSequence is " + mNativeFrameSequence);
         try {
             if (mNativeFrameSequence != 0) nativeDestroyFrameSequence(mNativeFrameSequence);
         } finally {
@@ -152,6 +154,7 @@ public class FrameSequence {
         }
 
         public void destroy() {
+            Log.d(TAG, "State destroy: mNativeState is " + mNativeState);
             if (mNativeState != 0) {
                 nativeDestroyState(mNativeState);
                 mNativeState = 0;

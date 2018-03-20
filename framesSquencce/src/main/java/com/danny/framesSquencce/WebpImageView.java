@@ -180,7 +180,7 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     public void setDefaultDrawable(int resId) {
         drawableList.remove(STATUS_DEFAULT);
 
-        drawableList.add(STATUS_DEFAULT, initWebpDrawable(resId, STATUS_NEUTRAL));
+        drawableList.add(STATUS_DEFAULT, initWebpDrawable(resId, 1));
         drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
             @Override
             public void onFinished(FrameSequenceDrawable drawable) {
@@ -194,7 +194,7 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     public void setNeutralDrawable(int resId) {
         drawableList.remove(STATUS_NEUTRAL);
 
-        drawableList.add(STATUS_NEUTRAL, initWebpDrawable(resId, STATUS_NEUTRAL));
+        drawableList.add(STATUS_NEUTRAL, initWebpDrawable(resId, 1));
         
         drawableList.get(STATUS_NEUTRAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
             @Override
@@ -209,7 +209,7 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     public void setFinalDrawable(int resId) {
         drawableList.remove(STATUS_FINAL);
 
-        drawableList.add(STATUS_FINAL, initWebpDrawable(resId, STATUS_NEUTRAL));
+        drawableList.add(STATUS_FINAL, initWebpDrawable(resId, 1));
         
         drawableList.get(STATUS_FINAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
             @Override

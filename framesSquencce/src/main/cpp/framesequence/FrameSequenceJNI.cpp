@@ -81,12 +81,15 @@ jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
         jobject istream, jbyteArray byteArray) {
     JavaInputStream stream(env, istream, byteArray);
     FrameSequence* frameSequence = FrameSequence::create(&stream);
+
+    LOGD("nativeDecodeStream frameSequenceLong is %d", reinterpret_cast<jlong>(frameSequence))
     return createJavaFrameSequence(env, frameSequence);
 }
 
-static void nativeDestroyFrameSequence(JNIEnv* env, jobject clazz,
-        jlong frameSequenceLong) {
-    FrameSequence* frameSequence = reinterpret_cast<FrameSequence*>(frameSequenceLong);
+static void nativeDestroyFrameSequence(JNIEnv *env, jobject clazz,
+                                       jlong frameSequenceLong) {
+    LOGD("nativeDestroyFrameSequence frameSequenceLong is %d", frameSequenceLong);
+    FrameSequence *frameSequence = reinterpret_cast<FrameSequence *>(frameSequenceLong);
     jobject buf = frameSequence->getRawByteBuffer();
     if (buf != NULL) {
         //env->DeleteGlobalRef(buf);

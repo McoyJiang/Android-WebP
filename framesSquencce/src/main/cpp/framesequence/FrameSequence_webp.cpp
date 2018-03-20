@@ -24,6 +24,9 @@
 
 #define WEBP_DEBUG 0
 
+#define LOG_TAG "FRAME_SEQUENCE"
+#define LOGD(format, args...)  __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, format, ##args);
+
 ////////////////////////////////////////////////////////////////////////////////
 // Frame sequence
 ////////////////////////////////////////////////////////////////////////////////
@@ -125,10 +128,14 @@ FrameSequence_webp::FrameSequence_webp(Stream* stream) {
 }
 
 FrameSequence_webp::~FrameSequence_webp() {
+    LOGD("delete FrameSequence here")
     WebPDemuxDelete(mDemux);
     delete[] mIsKeyFrame;
-    if (mRawByteBuffer == NULL) {
+    if (mRawByteBuffer != NULL) {
+        LOGD("mRawByteBuffer != NULL");
         delete[] mData.bytes;
+    } else {
+        LOGD("mRawByteBuffer == NULL");
     }
 }
 

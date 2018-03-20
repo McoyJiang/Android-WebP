@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        webpImageView.setDefaultDrawable(R.raw.dad);
-        webpImageView.setNeutralDrawable(R.raw.bad);
-        webpImageView.setFinalDrawable(R.raw.sad);
-
-        // set animation count for DEFAULT & NEUTRAL & FINAL animation
-        webpImageView.setDefaultAnimationCount(1);
-        webpImageView.setNeutralAnimationCount(2);
-        webpImageView.setFinalAnimationCount(1);
+//        webpImageView.setDefaultDrawable(R.raw.dad);
+//        webpImageView.setNeutralDrawable(R.raw.bad);
+//        webpImageView.setFinalDrawable(R.raw.sad);
+//
+//        // set animation count for DEFAULT & NEUTRAL & FINAL animation
+//        webpImageView.setDefaultAnimationCount(1);
+//        webpImageView.setNeutralAnimationCount(2);
+//        webpImageView.setFinalAnimationCount(1);
     }
 
     public void defaultAnim(View view) {
@@ -64,5 +64,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void finalAnim(View view) {
         webpImageView.playAnimation(WebpImageView.STATUS_FINAL);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        webpImageView.destroy();
     }
 }
