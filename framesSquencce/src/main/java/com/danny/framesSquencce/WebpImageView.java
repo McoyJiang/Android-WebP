@@ -39,6 +39,21 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
     final CheckingProvider mProvider = new CheckingProvider();
 
+    // stop all webp animation
+    public void stop() {
+        if (drawableList.get(STATUS_DEFAULT) != null) {
+            drawableList.get(STATUS_DEFAULT).stop();
+        }
+
+        if (drawableList.get(STATUS_NEUTRAL) != null) {
+            drawableList.get(STATUS_NEUTRAL).stop();
+        }
+
+        if (drawableList.get(STATUS_FINAL) != null) {
+            drawableList.get(STATUS_FINAL).stop();
+        }
+    }
+
     public void destroy() {
         drawableList.clear();
     }
