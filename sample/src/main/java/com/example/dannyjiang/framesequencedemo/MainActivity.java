@@ -23,26 +23,26 @@ public class MainActivity extends AppCompatActivity {
         webpImageView = ((WebpImageView) findViewById(R.id.webpImage));
 
         // add finish callback
-        webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
-
-            @Override
-            public void onAnimationFinished(int status) {
-                switch (status) {
-                    case STATUS_DEFAULT:
-                        Toast.makeText(MainActivity.this, "default webp animation finished",
-                                Toast.LENGTH_SHORT).show();
-                        break;
-                    case STATUS_NEUTRAL:
-                        Toast.makeText(MainActivity.this, "neutral webp animation finished",
-                                Toast.LENGTH_SHORT).show();
-                        break;
-                    case STATUS_FINAL:
-                        Toast.makeText(MainActivity.this, "final webp animation finished",
-                                Toast.LENGTH_SHORT).show();
-                        break;
-                }
-            }
-        });
+//        webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
+//
+//            @Override
+//            public void onAnimationFinished(int status) {
+//                switch (status) {
+//                    case STATUS_DEFAULT:
+//                        Toast.makeText(MainActivity.this, "default webp animation finished",
+//                                Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case STATUS_NEUTRAL:
+//                        Toast.makeText(MainActivity.this, "neutral webp animation finished",
+//                                Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case STATUS_FINAL:
+//                        Toast.makeText(MainActivity.this, "final webp animation finished",
+//                                Toast.LENGTH_SHORT).show();
+//                        break;
+//                }
+//            }
+//        });
 
 //        webpImageView.setDefaultDrawable(R.raw.dad);
 //        webpImageView.setNeutralDrawable(R.raw.bad);

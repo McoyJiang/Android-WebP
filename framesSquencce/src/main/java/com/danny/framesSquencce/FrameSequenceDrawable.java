@@ -48,10 +48,10 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     private static final long MIN_DELAY_MS = 20;
     private static final long DEFAULT_DELAY_MS = 100;
 
-    private static final Object sLock = new Object();
-    private static HandlerThread sDecodingThread;
-    private static Handler sDecodingThreadHandler;
-    private static void initializeDecodingThread() {
+    private final Object sLock = new Object();
+    private HandlerThread sDecodingThread;
+    private Handler sDecodingThreadHandler;
+    private void initializeDecodingThread() {
         synchronized (sLock) {
             if (sDecodingThread != null) return;
 
@@ -91,7 +91,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         public abstract void releaseBitmap(Bitmap bitmap);
     }
 
-    private static BitmapProvider sAllocatingBitmapProvider = new BitmapProvider() {
+    public static BitmapProvider sAllocatingBitmapProvider = new BitmapProvider() {
         @Override
         public Bitmap acquireBitmap(int minWidth, int minHeight) {
             return Bitmap.createBitmap(minWidth, minHeight, Bitmap.Config.ARGB_8888);
@@ -318,10 +318,22 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         }
 
         // For simplicity and safety, we don't destroy the state object here
+        mFrameSequenceState.destroy();
         mBitmapProvider.releaseBitmap(bitmapToReleaseA);
         if (bitmapToReleaseB != null) {
             mBitmapProvider.releaseBitmap(bitmapToReleaseB);
         }
+
+        if (sDecodingThread != null) {
+            sDecodingThread.quit();
+            sDecodingThread = null;
+        }
+        if (sDecodingThreadHandler != null) {
+            sDecodingThreadHandler.removeCallbacks(mDecodeRunnable);
+            mDecodeRunnable = null;
+        }
+
+        unscheduleSelf(this);
     }
 
     @Override
@@ -396,6 +408,9 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
     @Override
     public void run() {
+        if (mDestroyed) {
+            return;
+        }
         // set ready to swap as necessary
         boolean invalidate = false;
         synchronized (mLock) {

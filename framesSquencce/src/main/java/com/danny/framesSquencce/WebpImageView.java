@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.SparseArray;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,7 +38,7 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     // the final animation count
     private int finalCount;
 
-    final CheckingProvider mProvider = new CheckingProvider();
+    private CheckingProvider mProvider = new CheckingProvider();
 
     // stop all webp animation
     public void stop() {
@@ -55,13 +56,31 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     }
 
     public void destroy() {
+        if (drawableList.get(STATUS_DEFAULT) != null) {
+            drawableList.get(STATUS_DEFAULT).destroy();
+        }
+
+        if (drawableList.get(STATUS_NEUTRAL) != null) {
+            drawableList.get(STATUS_NEUTRAL).destroy();
+        }
+
+        if (drawableList.get(STATUS_FINAL) != null) {
+            drawableList.get(STATUS_FINAL).destroy();
+        }
+
         drawableList.clear();
+
+        if (mProvider != null) {
+            mProvider.empty();
+            mProvider = null;
+        }
     }
 
     public static class CheckingProvider implements FrameSequenceDrawable.BitmapProvider {
         HashSet<Bitmap> mBitmaps = new HashSet<Bitmap>();
         @Override
         public Bitmap acquireBitmap(int minWidth, int minHeight) {
+            Log.e(TAG, "acquireBitmap here");
             Bitmap bitmap =
                     Bitmap.createBitmap(minWidth + STATUS_NEUTRAL, minHeight + 4, Bitmap.Config.ARGB_8888);
             mBitmaps.add(bitmap);
@@ -71,12 +90,19 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         @Override
         public void releaseBitmap(Bitmap bitmap) {
             if (!mBitmaps.contains(bitmap)) throw new IllegalStateException();
+            Log.e(TAG, "need to releaseBitmap here");
             mBitmaps.remove(bitmap);
             bitmap.recycle();
         }
 
         public boolean isEmpty() {
             return mBitmaps.isEmpty();
+        }
+
+        public void empty() {
+            if (mBitmaps != null) {
+                mBitmaps.clear();
+            }
         }
     }
 
@@ -111,15 +137,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
         // load raw resources into streams, and get FrameSequenceDrawable, store them in array
         drawableList.add(initWebpDrawable(mTypedArray.getResourceId(
-                R.styleable.webImg_defaultRawId, -STATUS_NEUTRAL), defaultCount));
-        drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
-            @Override
-            public void onFinished(FrameSequenceDrawable drawable) {
-                if (listener != null) {
-                    listener.onAnimationFinished(STATUS_DEFAULT);
+                R.styleable.webImg_defaultRawId, -1), defaultCount));
+        if (drawableList.get(STATUS_DEFAULT) != null) {
+            drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+                @Override
+                public void onFinished(FrameSequenceDrawable drawable) {
+                    if (listener != null) {
+                        listener.onAnimationFinished(STATUS_DEFAULT);
+                    }
                 }
-            }
-        });
+            });
+        }
 
         drawableList.add(initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_neutralRawId, -STATUS_NEUTRAL), neutralCount));
@@ -193,7 +221,10 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     }
 
     public void setDefaultDrawable(int resId) {
-        drawableList.remove(STATUS_DEFAULT);
+        if (drawableList.get(STATUS_DEFAULT) != null) {
+            drawableList.get(STATUS_DEFAULT).destroy();
+            drawableList.remove(STATUS_DEFAULT);
+        }
 
         drawableList.add(STATUS_DEFAULT, initWebpDrawable(resId, 1));
         drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
@@ -207,7 +238,10 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     }
 
     public void setNeutralDrawable(int resId) {
-        drawableList.remove(STATUS_NEUTRAL);
+        if (drawableList.get(STATUS_NEUTRAL) != null) {
+            drawableList.get(STATUS_NEUTRAL).destroy();
+            drawableList.remove(STATUS_NEUTRAL);
+        }
 
         drawableList.add(STATUS_NEUTRAL, initWebpDrawable(resId, 1));
         
@@ -222,7 +256,10 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     }
 
     public void setFinalDrawable(int resId) {
-        drawableList.remove(STATUS_FINAL);
+        if (drawableList.get(STATUS_FINAL) != null) {
+            drawableList.get(STATUS_FINAL).destroy();
+            drawableList.remove(STATUS_FINAL);
+        }
 
         drawableList.add(STATUS_FINAL, initWebpDrawable(resId, 1));
         
