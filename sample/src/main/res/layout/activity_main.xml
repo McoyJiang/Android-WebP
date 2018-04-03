@@ -28,14 +28,13 @@
         android:id="@+id/webpImage"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:background="@color/colorAccent"
-        webpImg:defaultRawId="@raw/roddy_sad_blink_right"
-        webpImg:neutralRawId="@raw/roddy_neutral_talk_right"
-        webpImg:finalRawId="@raw/roddy_happy_talk_right"
+        webpImg:defaultRawId="@raw/car"
+        webpImg:neutralRawId="@raw/google"
+        webpImg:finalRawId="@raw/hiltler"
 
-        webpImg:defaultCount="2"
+        webpImg:defaultCount="1"
         webpImg:neutralCount="1"
-        webpImg:finalCount="3"
+        webpImg:finalCount="1"
         />
 
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseArray;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -187,7 +188,7 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         FrameSequence fs = null;
         try {
             is = getResources().openRawResource(resId);
-            fs = FrameSequence.decodeStream(is);
+            fs = FrameSequence.decodeByteArray(toByteArray(is));
             fs.setDefaultLoopCount(animationCount);
             drawable = new FrameSequenceDrawable(fs, mProvider);
         } catch (Exception e) {
@@ -204,6 +205,16 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         }
 
         return drawable;
+    }
+
+    private byte[] toByteArray(InputStream input) throws IOException {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        byte[] buffer = new byte[4096];
+        int n = 0;
+        while (-1 != (n = input.read(buffer))) {
+            output.write(buffer, 0, n);
+        }
+        return output.toByteArray();
     }
 
     public void setDefaultAnimationCount(int defaultAnimationCount) {
@@ -271,6 +282,18 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
                 }
             }
         });
+    }
+
+    /**
+     * Pass true to mask the shape of the animated drawing content to a circle.
+     *
+     * <p> The masking circle will be the largest circle contained in the Drawable's bounds.
+     * Masking is done with BitmapShader, incurring minimal additional draw cost.
+     */
+    public final void setCircleMaskEnabled(boolean circleMaskEnabled) {
+        for (FrameSequenceDrawable drawable : drawableList) {
+            drawable.setCircleMaskEnabled(circleMaskEnabled);
+        }
     }
 
     // only play default animation
