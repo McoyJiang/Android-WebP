@@ -42,6 +42,24 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
             }
+
+            @Override
+            public void onAnimationStart(int status) {
+                switch (status) {
+                    case STATUS_DEFAULT:
+                        Toast.makeText(MainActivity.this, "default webp animation start",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_NEUTRAL:
+                        Toast.makeText(MainActivity.this, "neutral webp animation start",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_FINAL:
+                        Toast.makeText(MainActivity.this, "final webp animation start",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
         });
 
         // set animation count for DEFAULT & NEUTRAL & FINAL animation

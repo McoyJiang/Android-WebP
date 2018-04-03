@@ -119,6 +119,8 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
          * @param status    STATUS_DEFAULT or STATUS_NEUTRAL or STATUS_FINAL
          */
         void onAnimationFinished(int status);
+
+        void onAnimationStart(int status);
     }
 
     public WebpImageView(Context context) {
@@ -140,11 +142,18 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         drawableList.add(initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_defaultRawId, -1), defaultCount));
         if (drawableList.get(STATUS_DEFAULT) != null) {
-            drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            drawableList.get(STATUS_DEFAULT).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
                 @Override
                 public void onFinished(FrameSequenceDrawable drawable) {
                     if (listener != null) {
                         listener.onAnimationFinished(STATUS_DEFAULT);
+                    }
+                }
+
+                @Override
+                public void onStart(FrameSequenceDrawable drawable) {
+                    if (listener != null) {
+                        listener.onAnimationStart(STATUS_DEFAULT);
                     }
                 }
             });
@@ -153,11 +162,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         drawableList.add(initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_neutralRawId, -STATUS_NEUTRAL), neutralCount));
         if (drawableList.get(STATUS_NEUTRAL) != null) {
-            drawableList.get(STATUS_NEUTRAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            drawableList.get(STATUS_NEUTRAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
                 @Override
                 public void onFinished(FrameSequenceDrawable drawable) {
                     if (listener != null) {
                         listener.onAnimationFinished(STATUS_NEUTRAL);
+                    }
+                }
+                @Override
+                public void onStart(FrameSequenceDrawable drawable) {
+                    if (listener != null) {
+                        listener.onAnimationStart(STATUS_NEUTRAL);
                     }
                 }
             });
@@ -166,11 +181,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         drawableList.add(initWebpDrawable(mTypedArray.getResourceId(
                 R.styleable.webImg_finalRawId, -STATUS_NEUTRAL), finalCount));
         if (drawableList.get(STATUS_FINAL) != null) {
-            drawableList.get(STATUS_FINAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+            drawableList.get(STATUS_FINAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
                 @Override
                 public void onFinished(FrameSequenceDrawable drawable) {
                     if (listener != null) {
                         listener.onAnimationFinished(STATUS_FINAL);
+                    }
+                }
+                @Override
+                public void onStart(FrameSequenceDrawable drawable) {
+                    if (listener != null) {
+                        listener.onAnimationStart(STATUS_FINAL);
                     }
                 }
             });
@@ -238,11 +259,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         }
 
         drawableList.add(STATUS_DEFAULT, initWebpDrawable(resId, 1));
-        drawableList.get(STATUS_DEFAULT).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+        drawableList.get(STATUS_DEFAULT).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
             @Override
             public void onFinished(FrameSequenceDrawable drawable) {
                 if (listener != null) {
                     listener.onAnimationFinished(STATUS_DEFAULT);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_DEFAULT);
                 }
             }
         });
@@ -256,11 +283,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
         drawableList.add(STATUS_NEUTRAL, initWebpDrawable(resId, 1));
         
-        drawableList.get(STATUS_NEUTRAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+        drawableList.get(STATUS_NEUTRAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
             @Override
             public void onFinished(FrameSequenceDrawable drawable) {
                 if (listener != null) {
                     listener.onAnimationFinished(STATUS_NEUTRAL);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_NEUTRAL);
                 }
             }
         });
@@ -274,11 +307,17 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
         drawableList.add(STATUS_FINAL, initWebpDrawable(resId, 1));
         
-        drawableList.get(STATUS_FINAL).setOnFinishedListener(new FrameSequenceDrawable.OnFinishedListener() {
+        drawableList.get(STATUS_FINAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
             @Override
             public void onFinished(FrameSequenceDrawable drawable) {
                 if (listener != null) {
                     listener.onAnimationFinished(STATUS_FINAL);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_FINAL);
                 }
             }
         });
