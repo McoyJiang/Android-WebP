@@ -66,7 +66,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         mFrameSequence.setDefaultLoopCount(animationCount);
     }
 
-    public static interface OnFinishedListener {
+    public static interface OnAnimationListener {
         /**
          * Called when a FrameSequenceDrawable has finished looping.
          *
@@ -74,6 +74,8 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
          * stopped, or marked invisible.
          */
         public abstract void onFinished(FrameSequenceDrawable drawable);
+
+        void onStart(FrameSequenceDrawable drawable);
     }
 
     public static interface BitmapProvider {
@@ -106,8 +108,8 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
      *
      * @see #setLoopBehavior(int)
      */
-    public void setOnFinishedListener(OnFinishedListener onFinishedListener) {
-        mOnFinishedListener = onFinishedListener;
+    public void setOnAnimationListener(OnAnimationListener onAnimationListener) {
+        mOnAnimationListener = onAnimationListener;
     }
 
     /**
@@ -163,7 +165,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     private long mLastSwap;
     private long mNextSwap;
     private int mNextFrameToDecode;
-    private OnFinishedListener mOnFinishedListener;
+    private OnAnimationListener mOnAnimationListener;
 
     /**
      * Runs on decoding thread, only modifies mBackBitmap's pixels
@@ -213,11 +215,20 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         }
     };
 
+    private Runnable startRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mOnAnimationListener != null) {
+                mOnAnimationListener.onStart(FrameSequenceDrawable.this);
+            }
+        }
+    };
+
     private Runnable mCallbackRunnable = new Runnable() {
         @Override
         public void run() {
-            if (mOnFinishedListener != null) {
-                mOnFinishedListener.onFinished(FrameSequenceDrawable.this);
+            if (mOnAnimationListener != null) {
+                mOnAnimationListener.onFinished(FrameSequenceDrawable.this);
             }
         }
     };
@@ -369,6 +380,11 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
                 mFrontBitmapShader = tmpShader;
 
                 mLastSwap = SystemClock.uptimeMillis();
+
+                // this means the WebP animation just start
+                if (mCurrentLoop == 0 && mNextFrameToDecode == 0) {
+                    scheduleSelf(startRunnable, 0);
+                }
 
                 boolean continueLooping = true;
                 if (mNextFrameToDecode == mFrameSequence.getFrameCount() - 1) {
