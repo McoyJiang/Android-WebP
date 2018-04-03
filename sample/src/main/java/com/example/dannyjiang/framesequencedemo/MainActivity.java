@@ -23,35 +23,33 @@ public class MainActivity extends AppCompatActivity {
         webpImageView = ((WebpImageView) findViewById(R.id.webpImage));
 
         // add finish callback
-//        webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
-//
-//            @Override
-//            public void onAnimationFinished(int status) {
-//                switch (status) {
-//                    case STATUS_DEFAULT:
-//                        Toast.makeText(MainActivity.this, "default webp animation finished",
-//                                Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case STATUS_NEUTRAL:
-//                        Toast.makeText(MainActivity.this, "neutral webp animation finished",
-//                                Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case STATUS_FINAL:
-//                        Toast.makeText(MainActivity.this, "final webp animation finished",
-//                                Toast.LENGTH_SHORT).show();
-//                        break;
-//                }
-//            }
-//        });
+        webpImageView.setFinishedListener(new WebpImageView.OnWebpFinishListener(){
 
-//        webpImageView.setDefaultDrawable(R.raw.dad);
-//        webpImageView.setNeutralDrawable(R.raw.bad);
-//        webpImageView.setFinalDrawable(R.raw.sad);
-//
-//        // set animation count for DEFAULT & NEUTRAL & FINAL animation
-//        webpImageView.setDefaultAnimationCount(1);
-//        webpImageView.setNeutralAnimationCount(2);
-//        webpImageView.setFinalAnimationCount(1);
+            @Override
+            public void onAnimationFinished(int status) {
+                switch (status) {
+                    case STATUS_DEFAULT:
+                        Toast.makeText(MainActivity.this, "default webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_NEUTRAL:
+                        Toast.makeText(MainActivity.this, "neutral webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case STATUS_FINAL:
+                        Toast.makeText(MainActivity.this, "final webp animation finished",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
+
+        // set animation count for DEFAULT & NEUTRAL & FINAL animation
+        webpImageView.setDefaultAnimationCount(10);
+        webpImageView.setNeutralAnimationCount(10);
+        webpImageView.setFinalAnimationCount(10);
+
+        webpImageView.setCircleMaskEnabled(true);
     }
 
     public void defaultAnim(View view) {
