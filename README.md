@@ -131,4 +131,4 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-## for more details, please take references from `FrameSequenceTest.java` in sample
+## for more details, please take references from `MainActivity.java` in sample
