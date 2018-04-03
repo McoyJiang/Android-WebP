@@ -16,6 +16,7 @@
 
 #include "android/bitmap.h"
 #include <android/log.h>
+#include <sys/stat.h>
 #include "JNIHelpers.h"
 #include "utils/log.h"
 #include "FrameSequence.h"
@@ -58,6 +59,7 @@ static jobject nativeDecodeByteArray(JNIEnv* env, jobject clazz,
     }
     MemoryStream stream(bytes + offset, length, NULL);
     FrameSequence* frameSequence = FrameSequence::create(&stream);
+    LOGD("nativeDecodeByteArray frameSequenceLong is %d", reinterpret_cast<jlong>(frameSequence))
     env->ReleasePrimitiveArrayCritical(byteArray, bytes, 0);
     return createJavaFrameSequence(env, frameSequence);
 }
@@ -77,7 +79,7 @@ static jobject nativeDecodeByteBuffer(JNIEnv* env, jobject clazz,
     return finalSequence;
 }
 
-jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
+static jobject nativeDecodeStream(JNIEnv* env, jobject clazz,
         jobject istream, jbyteArray byteArray) {
     JavaInputStream stream(env, istream, byteArray);
     FrameSequence* frameSequence = FrameSequence::create(&stream);
