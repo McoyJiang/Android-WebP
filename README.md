@@ -11,6 +11,13 @@ there will be a blank gap between different Controller, like the following discu
 [Smooth transition when changing image on SimpleDraweeView](https://github.com/facebook/fresco/issues/1167)<br>
 [How to make it not flash when constantly switching Load picture?](https://github.com/facebook/fresco/issues/833)<br>
 
+# WHAT DOES THIS LIB CAN DO
+just show normal webp image file, as follows:<br>
+<img src="https://github.com/McoyJiang/Android-WebP/blob/master/IMAGES/original_webp.gif">
+<br>
+or you can make a circular crop of webp files, as follows:<br>
+<img src="https://github.com/McoyJiang/Android-WebP/blob/master/IMAGES/circularl_webp.gif">
+
 
 # How to import this library
 You can import this library into your porject by two ways:
@@ -56,8 +63,12 @@ there is a customized widget `WebpImageView`. Use this widget you can simply dis
         webpImg:finalCount="3"
         />
 ```
-there are 3 raw resources you can set to a WebpImageView, they are respectively for default & neutral & final animation status.<br>
-besides, you can set animation count by setting `defaultCount` & `neutralCount` & `finalCount`
+there are 3 raw resources you can set to a WebpImageView, they are respectively for default & neutral & final animation status.<br><br>
+you can set animation count by setting `defaultCount` & `neutralCount` & `finalCount`<br><br>
+if you want to show circular image, you can just add the following code for `WebpImageView` : <br>
+```
+webpImageView.setCircleMaskEnabled(true);
+```
 
 **Notece: you should set name space for webpImg attribute. add this into you xml file**
 ```
