@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
         webpImageView.setDefaultAnimationCount(10);
         webpImageView.setNeutralAnimationCount(10);
         webpImageView.setFinalAnimationCount(10);
-
-        webpImageView.setCircleMaskEnabled(true);
     }
 
     public void defaultAnim(View view) {

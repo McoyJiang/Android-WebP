@@ -323,18 +323,6 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         });
     }
 
-    /**
-     * Pass true to mask the shape of the animated drawing content to a circle.
-     *
-     * <p> The masking circle will be the largest circle contained in the Drawable's bounds.
-     * Masking is done with BitmapShader, incurring minimal additional draw cost.
-     */
-    public final void setCircleMaskEnabled(boolean circleMaskEnabled) {
-        for (FrameSequenceDrawable drawable : drawableList) {
-            drawable.setCircleMaskEnabled(circleMaskEnabled);
-        }
-    }
-
     // only play default animation
     public void playAnimation() {
         playAnimation(STATUS_DEFAULT);
