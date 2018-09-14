@@ -42,7 +42,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     /**
      * These constants are chosen to imitate common browser behavior for WebP/GIF.
      * If other decoders are added, this behavior should be moved into the WebP/GIF decoders.
-     *
+     * <p>
      * Note that 0 delay is undefined behavior in the GIF standard.
      */
     private static final long MIN_DELAY_MS = 100;
@@ -51,6 +51,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     private final Object sLock = new Object();
     private HandlerThread sDecodingThread;
     private Handler sDecodingThreadHandler;
+
     private void initializeDecodingThread() {
         synchronized (sLock) {
             if (sDecodingThread != null) return;
@@ -69,7 +70,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     public static interface OnAnimationListener {
         /**
          * Called when a FrameSequenceDrawable has finished looping.
-         *
+         * <p>
          * Note that this is will not be called if the drawable is explicitly
          * stopped, or marked invisible.
          */
@@ -87,7 +88,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         /**
          * Called by FrameSequenceDrawable to release a Bitmap it no longer needs. The Bitmap
          * will no longer be used at all by the drawable, so it is safe to reuse elsewhere.
-         *
+         * <p>
          * This method may be called by FrameSequenceDrawable on any thread.
          */
         public abstract void releaseBitmap(Bitmap bitmap);
@@ -100,7 +101,8 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         }
 
         @Override
-        public void releaseBitmap(Bitmap bitmap) {}
+        public void releaseBitmap(Bitmap bitmap) {
+        }
     };
 
     /**
@@ -129,7 +131,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
     /**
      * Define looping behavior of frame sequence.
-     *
+     * <p>
      * Must be one of LOOP_ONCE, LOOP_INF, or LOOP_DEFAULT
      */
     public void setLoopBehavior(int loopBehavior) {
@@ -211,6 +213,15 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         }
     };
 
+    private Runnable startRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mOnAnimationListener != null) {
+                mOnAnimationListener.onStart(FrameSequenceDrawable.this);
+            }
+        }
+    };
+
     private Runnable mCallbackRunnable = new Runnable() {
         @Override
         public void run() {
@@ -274,7 +285,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     /**
      * Marks the drawable as permanently recycled (and thus unusable), and releases any owned
      * Bitmaps drawable to its BitmapProvider, if attached.
-     *
+     * <p>
      * If no BitmapProvider is attached to the drawable, recycle() is called on the Bitmaps.
      */
     public void destroy() {
@@ -347,9 +358,14 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
                 mLastSwap = SystemClock.uptimeMillis();
 
+                // this means the WebP animation just start
+                if (mNextFrameToDecode == 0) {
+                    scheduleSelf(startRunnable, 0);
+                }
+
                 boolean continueLooping = true;
                 if (mNextFrameToDecode >= mFrameSequence.getFrameCount() - 1) {
-                        continueLooping = false;
+                    continueLooping = false;
                 }
 
                 if (continueLooping) {
