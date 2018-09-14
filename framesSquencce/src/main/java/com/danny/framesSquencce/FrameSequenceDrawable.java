@@ -140,10 +140,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     private final FrameSequence.State mFrameSequenceState;
 
     private final Paint mPaint;
-    private BitmapShader mFrontBitmapShader;
-    private BitmapShader mBackBitmapShader;
-     private final Rect mSrcRect;
-    private boolean mCircleMaskEnabled;
+    private final Rect mSrcRect;
 
     //Protects the fields below
     private final Object mLock = new Object();
@@ -265,28 +262,11 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
         mPaint = new Paint();
         mPaint.setFilterBitmap(true);
 
-        mFrontBitmapShader
-            = new BitmapShader(mFrontBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
-        mBackBitmapShader
-            = new BitmapShader(mBackBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
-
         mLastSwap = 0;
 
         mNextFrameToDecode = -1;
         mFrameSequenceState.getFrame(0, mFrontBitmap, -1);
         initializeDecodingThread();
-    }
-
-    /**
-     * Pass true to mask the shape of the animated drawing content to a circle.
-     *
-     * <p> The masking circle will be the largest circle contained in the Drawable's bounds.
-     * Masking is done with BitmapShader, incurring minimal additional draw cost.
-     */
-    public final void setCircleMaskEnabled(boolean circleMaskEnabled) {
-        mCircleMaskEnabled = circleMaskEnabled;
-        // Anti alias only necessary when using circular mask
-        mPaint.setAntiAlias(circleMaskEnabled);
     }
 
     private void checkDestroyedLocked() {
@@ -375,10 +355,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
                 mBackBitmap = mFrontBitmap;
                 mFrontBitmap = tmp;
 
-                BitmapShader tmpShader = mBackBitmapShader;
-                mBackBitmapShader = mFrontBitmapShader;
-                mFrontBitmapShader = tmpShader;
-
                 mLastSwap = SystemClock.uptimeMillis();
 
                 // this means the WebP animation just start
@@ -403,17 +379,8 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
             }
         }
 
-        if (mCircleMaskEnabled) {
-            Rect bounds = getBounds();
-            mPaint.setShader(mFrontBitmapShader);
-            float width = bounds.width();
-            float height = bounds.height();
-            float circleRadius = (Math.min(width, height)) / 2f;
-            canvas.drawCircle(width / 2f, height / 2f, circleRadius, mPaint);
-        } else {
-            mPaint.setShader(null);
-            canvas.drawBitmap(mFrontBitmap, mSrcRect, getBounds(), mPaint);
-        }
+        mPaint.setShader(null);
+        canvas.drawBitmap(mFrontBitmap, mSrcRect, getBounds(), mPaint);
     }
 
     private void scheduleDecodeLocked() {
