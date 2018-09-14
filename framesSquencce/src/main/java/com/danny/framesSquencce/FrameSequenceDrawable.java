@@ -156,7 +156,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
     private static final int STATE_READY_TO_SWAP = 4;
 
     private int mState;
-    private int mCurrentLoop;
     private int mLoopBehavior = LOOP_DEFAULT;
 
     private long mLastSwap;
@@ -208,15 +207,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
                 // destroy the bitmap here, since there's no safe way to get back to
                 // drawable thread - drawable is likely detached, so schedule is noop.
                 mBitmapProvider.releaseBitmap(bitmapToRelease);
-            }
-        }
-    };
-
-    private Runnable startRunnable = new Runnable() {
-        @Override
-        public void run() {
-            if (mOnAnimationListener != null) {
-                mOnAnimationListener.onStart(FrameSequenceDrawable.this);
             }
         }
     };
@@ -357,18 +347,9 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
                 mLastSwap = SystemClock.uptimeMillis();
 
-                // this means the WebP animation just start
-                if (mCurrentLoop == 0 && mNextFrameToDecode == 0) {
-                    scheduleSelf(startRunnable, 0);
-                }
-
                 boolean continueLooping = true;
-                if (mNextFrameToDecode == mFrameSequence.getFrameCount() - 1) {
-                    mCurrentLoop++;
-                    if ((mLoopBehavior == LOOP_ONCE && mCurrentLoop == 1) ||
-                            (mLoopBehavior == LOOP_DEFAULT && mCurrentLoop == mFrameSequence.getDefaultLoopCount())) {
+                if (mNextFrameToDecode >= mFrameSequence.getFrameCount() - 1) {
                         continueLooping = false;
-                    }
                 }
 
                 if (continueLooping) {
@@ -384,7 +365,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
     private void scheduleDecodeLocked() {
         mState = STATE_SCHEDULED;
-        mNextFrameToDecode = (mNextFrameToDecode + 1) % mFrameSequence.getFrameCount();
+        mNextFrameToDecode++;
         sDecodingThreadHandler.post(mDecodeRunnable);
     }
 
@@ -412,7 +393,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
             synchronized (mLock) {
                 checkDestroyedLocked();
                 if (mState == STATE_SCHEDULED) return; // already scheduled
-                mCurrentLoop = 0;
                 scheduleDecodeLocked();
             }
         }
