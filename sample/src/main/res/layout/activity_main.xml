@@ -28,13 +28,6 @@
         android:id="@+id/webpImage"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        webpImg:defaultRawId="@raw/car"
-        webpImg:neutralRawId="@raw/google"
-        webpImg:finalRawId="@raw/hiltler"
-
-        webpImg:defaultCount="1"
-        webpImg:neutralCount="1"
-        webpImg:finalCount="1"
         />
 
 </LinearLayout>

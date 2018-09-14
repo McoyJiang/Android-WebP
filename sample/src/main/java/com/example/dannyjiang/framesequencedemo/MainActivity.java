@@ -62,12 +62,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        webpImageView.setDefaultDrawable(R.raw.ben_neutral_talk_right);
+        webpImageView.setNeutralDrawable(R.raw.ben_sad_blink_right);
+        webpImageView.setFinalDrawable(R.raw.ben_happy_talk_right);
         // set animation count for DEFAULT & NEUTRAL & FINAL animation
         webpImageView.setDefaultAnimationCount(10);
         webpImageView.setNeutralAnimationCount(10);
         webpImageView.setFinalAnimationCount(10);
-
-        webpImageView.setCircleMaskEnabled(true);
     }
 
     public void defaultAnim(View view) {
