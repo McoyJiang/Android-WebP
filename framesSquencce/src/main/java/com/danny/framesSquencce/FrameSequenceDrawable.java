@@ -45,7 +45,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
      *
      * Note that 0 delay is undefined behavior in the GIF standard.
      */
-    private static final long MIN_DELAY_MS = 20;
+    private static final long MIN_DELAY_MS = 100;
     private static final long DEFAULT_DELAY_MS = 100;
 
     private final Object sLock = new Object();
@@ -379,7 +379,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
             }
         }
 
-        mPaint.setShader(null);
         canvas.drawBitmap(mFrontBitmap, mSrcRect, getBounds(), mPaint);
     }
 

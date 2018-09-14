@@ -103,6 +103,30 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/release" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/release" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/release" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/release" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/jni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/release/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/jni" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testRelease/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/attr" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
@@ -152,5 +176,30 @@
     <orderEntry type="library" name="com.android.support:support-v4-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="net.sf.kxml:kxml2:2.3.0@jar" level="project" />
     <orderEntry type="library" name="com.android.support:animated-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.0.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-fragment-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:common:1.0.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-compat-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v4-26.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules-1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource-3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
   </component>
 </module>

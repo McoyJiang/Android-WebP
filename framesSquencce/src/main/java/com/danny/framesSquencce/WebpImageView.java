@@ -204,11 +204,19 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
     }
 
     private FrameSequenceDrawable initWebpDrawable(int resId, int animationCount) {
-        InputStream is = null;
+        try {
+            InputStream is = getResources().openRawResource(resId);
+            return initWebpDrawable(is, animationCount);
+        } catch (Exception e) {
+            Log.e(TAG, "e is " + e.getMessage());
+            return null;
+        }
+    }
+
+    private FrameSequenceDrawable initWebpDrawable(InputStream is, int animationCount) {
         FrameSequenceDrawable drawable = null;
         FrameSequence fs = null;
         try {
-            is = getResources().openRawResource(resId);
             fs = FrameSequence.decodeByteArray(toByteArray(is));
             fs.setDefaultLoopCount(animationCount);
             drawable = new FrameSequenceDrawable(fs, mProvider);
@@ -224,7 +232,6 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
                 Log.e(TAG, "io not closed in right way : " + e.getMessage());
             }
         }
-
         return drawable;
     }
 
@@ -275,6 +282,29 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         });
     }
 
+    public void setDefaultDrawable(InputStream is) {
+        if (drawableList.get(STATUS_DEFAULT) != null) {
+            drawableList.get(STATUS_DEFAULT).destroy();
+            drawableList.remove(STATUS_DEFAULT);
+        }
+
+        drawableList.add(STATUS_DEFAULT, initWebpDrawable(is, 1));
+        drawableList.get(STATUS_DEFAULT).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_DEFAULT);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_DEFAULT);
+                }
+            }
+        });
+    }
+
     public void setNeutralDrawable(int resId) {
         if (drawableList.get(STATUS_NEUTRAL) != null) {
             drawableList.get(STATUS_NEUTRAL).destroy();
@@ -299,6 +329,30 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
         });
     }
 
+    public void setNeutralDrawable(InputStream is) {
+        if (drawableList.get(STATUS_NEUTRAL) != null) {
+            drawableList.get(STATUS_NEUTRAL).destroy();
+            drawableList.remove(STATUS_NEUTRAL);
+        }
+
+        drawableList.add(STATUS_NEUTRAL, initWebpDrawable(is, 1));
+
+        drawableList.get(STATUS_NEUTRAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_NEUTRAL);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_NEUTRAL);
+                }
+            }
+        });
+    }
+
     public void setFinalDrawable(int resId) {
         if (drawableList.get(STATUS_FINAL) != null) {
             drawableList.get(STATUS_FINAL).destroy();
@@ -307,6 +361,30 @@ public class WebpImageView extends android.support.v7.widget.AppCompatImageView 
 
         drawableList.add(STATUS_FINAL, initWebpDrawable(resId, 1));
         
+        drawableList.get(STATUS_FINAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
+            @Override
+            public void onFinished(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationFinished(STATUS_FINAL);
+                }
+            }
+            @Override
+            public void onStart(FrameSequenceDrawable drawable) {
+                if (listener != null) {
+                    listener.onAnimationStart(STATUS_FINAL);
+                }
+            }
+        });
+    }
+
+    public void setFinalDrawable(InputStream is) {
+        if (drawableList.get(STATUS_FINAL) != null) {
+            drawableList.get(STATUS_FINAL).destroy();
+            drawableList.remove(STATUS_FINAL);
+        }
+
+        drawableList.add(STATUS_FINAL, initWebpDrawable(is, 1));
+
         drawableList.get(STATUS_FINAL).setOnAnimationListener(new FrameSequenceDrawable.OnAnimationListener() {
             @Override
             public void onFinished(FrameSequenceDrawable drawable) {

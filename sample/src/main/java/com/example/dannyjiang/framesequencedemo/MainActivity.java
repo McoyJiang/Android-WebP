@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        webpImageView.setDefaultDrawable(R.raw.ben_neutral_talk_right);
-        webpImageView.setNeutralDrawable(R.raw.ben_sad_blink_right);
-        webpImageView.setFinalDrawable(R.raw.ben_happy_talk_right);
+        webpImageView.setDefaultDrawable(getResources().openRawResource(R.raw.capical_g_celebration));
+        webpImageView.setNeutralDrawable(getResources().openRawResource(R.raw.ben_sad_blink_right));
+        webpImageView.setFinalDrawable(getResources().openRawResource(R.raw.ben_happy_talk_right));
         // set animation count for DEFAULT & NEUTRAL & FINAL animation
         webpImageView.setDefaultAnimationCount(10);
         webpImageView.setNeutralAnimationCount(10);
