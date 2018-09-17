@@ -358,11 +358,6 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
                 mLastSwap = SystemClock.uptimeMillis();
 
-                // this means the WebP animation just start
-                if (mNextFrameToDecode == 0) {
-                    scheduleSelf(startRunnable, 0);
-                }
-
                 boolean continueLooping = true;
                 if (mNextFrameToDecode >= mFrameSequence.getFrameCount() - 1) {
                     continueLooping = false;
@@ -381,7 +376,10 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
 
     private void scheduleDecodeLocked() {
         mState = STATE_SCHEDULED;
-        mNextFrameToDecode++;
+        mNextFrameToDecode += 2;
+        if (mNextFrameToDecode > mFrameSequence.getFrameCount() - 1) {
+            mNextFrameToDecode = mFrameSequence.getFrameCount() - 1;
+        }
         sDecodingThreadHandler.post(mDecodeRunnable);
     }
 
@@ -409,6 +407,7 @@ public class FrameSequenceDrawable extends Drawable implements Animatable, Runna
             synchronized (mLock) {
                 checkDestroyedLocked();
                 if (mState == STATE_SCHEDULED) return; // already scheduled
+                scheduleSelf(startRunnable, 0);
                 scheduleDecodeLocked();
             }
         }

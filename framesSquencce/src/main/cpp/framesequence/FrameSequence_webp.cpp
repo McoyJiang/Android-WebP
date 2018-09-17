@@ -22,7 +22,7 @@
 
 #include "FrameSequence_webp.h"
 
-#define WEBP_DEBUG 0
+#define WEBP_DEBUG 1
 
 #define LOG_TAG "FRAME_SEQUENCE"
 #define LOGD(format, args...)  __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, format, ##args);
@@ -328,13 +328,13 @@ long FrameSequenceState_webp::drawFrame(int frameNr,
               (currIter.blend_method == WEBP_MUX_BLEND) ? "yes" : "no", currIter.duration);
 #endif
         // We swap the prev/curr buffers as we go.
-        Color8888* tmpBuffer = prevBuffer;
-        prevBuffer = currBuffer;
-        currBuffer = tmpBuffer;
-
-        int tmpStride = prevStride;
-        prevStride = currStride;
-        currStride = tmpStride;
+//        Color8888* tmpBuffer = prevBuffer;
+//        prevBuffer = currBuffer;
+//        currBuffer = tmpBuffer;
+//
+//        int tmpStride = prevStride;
+//        prevStride = currStride;
+//        currStride = tmpStride;
 
 #if WEBP_DEBUG
         ALOGD("            prev = %p, curr = %p, out = %p, tmp = %p",
