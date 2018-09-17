@@ -295,8 +295,7 @@ long FrameSequenceState_webp::drawFrame(int frameNr,
     const int canvasWidth = mFrameSequence.getWidth();
     const int canvasHeight = mFrameSequence.getHeight();
 
-    // Find the first frame to be decoded.
-    int start = max(previousFrameNr + 1, 0);
+    int start = frameNr;
     int earliestRequired = frameNr;
     while (earliestRequired > start) {
         if (mFrameSequence.isKeyFrame(earliestRequired)) {
@@ -327,19 +326,7 @@ long FrameSequenceState_webp::drawFrame(int frameNr,
               (currIter.dispose_method == WEBP_MUX_DISPOSE_NONE) ? "none" : "background",
               (currIter.blend_method == WEBP_MUX_BLEND) ? "yes" : "no", currIter.duration);
 #endif
-        // We swap the prev/curr buffers as we go.
-//        Color8888* tmpBuffer = prevBuffer;
-//        prevBuffer = currBuffer;
-//        currBuffer = tmpBuffer;
-//
-//        int tmpStride = prevStride;
-//        prevStride = currStride;
-//        currStride = tmpStride;
 
-#if WEBP_DEBUG
-        ALOGD("            prev = %p, curr = %p, out = %p, tmp = %p",
-              prevBuffer, currBuffer, outputPtr, mPreservedBuffer);
-#endif
         // Process this frame.
         initializeFrame(currIter, currBuffer, currStride, prevIter, prevBuffer, prevStride);
 
